@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f3ecdf" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="記錄每天念經幾遍。資料存在自己的手機裡，可匯出備份。" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="念經" />
+    <title>念經次數</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <p class="boot">正在開啟…</p>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <noscript>
+      <p class="boot">請開啟 JavaScript，才能記錄念經次數。</p>
+    </noscript>
+    <script src="logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
